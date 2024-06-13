@@ -32,4 +32,5 @@ COPY는 상위 경로에 대한 접근이 불가능하여 에러가 발생한다
 - ssl_certificate 관련 설정 2개와
 - 80포트 ( HTTP )로 들어오는 요청을 443 ( HTTPS )로 리디렉션 해주는 설정
 - HTTPS 서버에 대한 설정 등을 추가
+
 ![docker_nginx_conf.png](..%2Fimg%2Fdocker_nginx_conf.png)
