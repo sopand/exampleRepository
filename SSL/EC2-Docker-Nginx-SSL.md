@@ -4,7 +4,7 @@
 
 
 
-- Cerbot 설치
+- Certbot 설치
   - sudo apt-get update
   - sudo apt-get install certbot
 - 인증서를 발급
@@ -19,3 +19,17 @@
     - 매일 00시 00분에 갱신 명령을 실행
 
 
+### Dockerfile-nginx
+- SSL 인증서를 기본 디렉토리에서 복사하여 Dockerfile이 있는 디렉토리로 옮겨줘야함.
+- 그렇지 않고 기존의 SSL 인증서가 있는 디렉토리로 COPY를 시도시 
+COPY는 상위 경로에 대한 접근이 불가능하여 에러가 발생한다.
+
+![docker_nginx_img.png](..%2Fimg%2Fdocker_nginx_img.png)
+
+
+
+### nginx.conf
+- ssl_certificate 관련 설정 2개와
+- 80포트 ( HTTP )로 들어오는 요청을 443 ( HTTPS )로 리디렉션 해주는 설정
+- HTTPS 서버에 대한 설정 등을 추가
+![docker_nginx_conf.png](..%2Fimg%2Fdocker_nginx_conf.png)
