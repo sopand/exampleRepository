@@ -1,4 +1,14 @@
-# exampleRepository
-My Study Storage
+# Web Traning Note
 
-- Backend , FrontEnd , Server Skill Repository
+
+- Server
+  - SSL
+  - Docker
+  - Nginx
+- BackEnd
+
+
+- FrontEnd
+
+
+
