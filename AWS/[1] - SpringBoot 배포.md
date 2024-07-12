@@ -28,7 +28,7 @@
   - source ~/.bashrc 변경사항 적용
   - echo $JAVA_HOME ( /usr/lib/jvm/java-17-openjdk-amd64 출력되면 된것 )
 - **배포**
-  - nohup java -jar -Dspring.profiles.active=dev timeproject-0.0.1-SNAPSHOT.jar & 
+  - nohup java -jar -Dspring.profiles.active=prod timeproject-0.0.1-SNAPSHOT.jar & 
     - 여기서 profile을 빼먹으면 oauth2나 기타 profile별 설정해놓은 부분에서 에러가 발생하게됨
   - 배포할때 port ec2에 배포된 포트랑 겹치지않게 주의
 - **기타 확인 명령어**
